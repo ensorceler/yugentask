@@ -1,0 +1,35 @@
+# Ignore all build output
+node_modules/
+**/build/
+**/dist/
+**/node_modules/
+
+# Ignore Expo-specific files
+**/*.expo*
+**/.expo*/
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.development
+.env.staging
+.env.production
+.env.test
+
+# Ignore macOS-specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ignore npm lock files
+package-lock.json
+yarn.lock
+
+# Ignore log files
+*.log
+
+# Ignore miscellaneous files
+*.tgz
+*.zip
+*.gz
+*.swp

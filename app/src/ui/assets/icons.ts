@@ -1,0 +1,28 @@
+export { ChevronLeftIcon as ArrowLeftIcon } from "lucide-react-native";
+export { default as UserIcon } from "../../../assets/svgs/user.svg";
+export { default as GoogleColorIcon } from "../../../assets/svgs/google.svg";
+export { AppleIcon } from "lucide-react-native";
+export { default as HomeOutlinedIcon } from "../../../assets/svgs/home_outlined.svg";
+export { default as HomeFilledIcon } from "../../../assets/svgs/home_filled.svg";
+export { default as FolderOutlinedIcon } from "../../../assets/svgs/folder_outlined.svg";
+export { default as CalendarOutlinedIcon } from "../../../assets/svgs/calendar_outlined.svg";
+export { default as ProfileOutlinedIcon } from "../../../assets/svgs/profile_outlined.svg";
+export { default as FolderFilledIcon } from "../../../assets/svgs/folder_filled.svg";
+export { default as CalendarFilledIcon } from "../../../assets/svgs/calendar_filled.svg";
+export { default as ProfileFilledIcon } from "../../../assets/svgs/profile_filled.svg";
+export { PlusIcon } from "lucide-react-native";
+export { default as SearchIcon } from "../../../assets/svgs/search.svg";
+export { default as MenuIcon } from "../../../assets/svgs/menu.svg";
+export { default as NotificationIcon } from "../../../assets/svgs/notification.svg";
+
+export { ChevronRight as RightArrowIcon } from "lucide-react-native";
+export { default as LockIcon } from "../../../assets/svgs/lock.svg";
+export { default as SettingsIcon } from "../../../assets/svgs/settings.svg";
+export { default as EmailIcon } from "../../../assets/svgs/email.svg";
+export { default as DualUsersIcon } from "../../../assets/svgs/dual_user.svg";
+export { default as TeamsIcon } from "../../../assets/svgs/teams.svg";
+export { default as StatsIcon } from "../../../assets/svgs/stats.svg";
+export { default as ClockIcon } from "../../../assets/svgs/clock.svg";
+export { default as ThemeIcon } from "../../../assets/svgs/theme.svg";
+export { default as PictureIcon } from "../../../assets/svgs/picture.svg";
+export { default as MoreIcon } from "../../../assets/svgs/more.svg";
