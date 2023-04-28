@@ -4,11 +4,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        spacelight: ["SpaceGrotesk_300Light"],
-        spaceRegular: ["SpaceGrotesk_400Regular"],
-        spaceMedium: ["SpaceGrotesk_500Medium"],
-        spaceSemiBold: ["SpaceGrotesk_600SemiBold"],
-        spaceBold: ["SpaceGrotesk_700Bold"],
+        spacelight: ["SpaceGrotesk_Light"],
+        spaceRegular: ["SpaceGrotesk_Regular"],
+        spaceMedium: ["SpaceGrotesk_Medium"],
+        spaceSemiBold: ["SpaceGrotesk_SemiBold"],
+        spaceBold: ["SpaceGrotesk_Bold"],
       },
       colors: {
         greyScale: {

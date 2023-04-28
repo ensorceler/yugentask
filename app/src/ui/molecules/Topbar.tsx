@@ -5,14 +5,18 @@ import { ArrowLeftIcon, PlusIcon, SearchIcon } from "../assets/icons";
 import { COLORS } from "../../constants/theme";
 
 interface Props {
-  headerName: string;
+  headerName?: string;
   goBackToPrevious?: () => void;
+  searchFn?: () => void;
+  actionFn?: () => void;
   variant?: "add" | "search_add";
 }
 export default function Topbar({
   headerName,
   goBackToPrevious,
   variant,
+  actionFn,
+  searchFn,
 }: Props) {
   if (variant === "add") {
     return (
@@ -22,7 +26,7 @@ export default function Topbar({
         </Typography>
 
         <Button
-          onPress={() => {}}
+          onPress={actionFn}
           twClassName="w-fit bg-transparent px-2 py-2 border border-greyScale-200"
         >
           <View>
@@ -39,7 +43,7 @@ export default function Topbar({
         </Typography>
         <View className="flex flex-row items-center">
           <Button
-            onPress={() => {}}
+            onPress={searchFn}
             twClassName="w-fit mr-4 bg-transparent px-2 py-2 border border-greyScale-200 "
           >
             <View>
@@ -48,7 +52,7 @@ export default function Topbar({
           </Button>
 
           <Button
-            onPress={() => {}}
+            onPress={actionFn}
             twClassName="w-fit bg-transparent px-2 py-2 border border-greyScale-200"
           >
             <View>
@@ -69,10 +73,11 @@ export default function Topbar({
           <ArrowLeftIcon className="text-greyScale-900" />
         </View>
       </Button>
-
-      <Typography fw="bold" twClassName="text-2xl">
-        {headerName}
-      </Typography>
+      {headerName && (
+        <Typography fw="bold" twClassName="text-2xl">
+          {headerName}
+        </Typography>
+      )}
     </View>
   );
 }

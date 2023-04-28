@@ -1,7 +1,8 @@
+import * as React from "react";
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import { Typography } from "../../ui/atoms";
-import { View } from "react-native";
+import { Pressable, View } from "react-native";
 import {
   EmailIcon,
   LockIcon,
@@ -14,6 +15,7 @@ import { AccountSettings } from "../../ui/organisms";
 import { useNavigation } from "@react-navigation/native";
 import { ProfileMainScreenProps } from "../../@types/navigation";
 import twFusion from "../../utils/twFusion";
+import * as ImagePicker from "expo-image-picker";
 
 const notificationSettingsData = {
   heading: "",
@@ -67,11 +69,13 @@ export default function ProfileScreen({ navigation }: ProfileMainScreenProps) {
           <Typography fw="semiBold" twClassName="text-2xl">
             Profile
           </Typography>
+
           <View
             aria-label="profile_info"
             className="mt-4 flex flex-row items-center"
           >
-            <View className="bg-greyScale-300 h-16 w-16 rounded-full mr-4"></View>
+            <Pressable className="bg-greyScale-300 h-16 w-16 rounded-full mr-4"></Pressable>
+
             <View className="flex items-start">
               <Typography fw="medium" twClassName="text-lg">
                 Shakil Ahmed

@@ -5,11 +5,13 @@ import { Topbar } from "../ui/molecules";
 import { ProjectForm } from "../ui/organisms";
 import { NewProjectScreenProps } from "../@types/navigation";
 import { View } from "react-native";
-import Searchbar from "../ui/molecules/Searchbar";
+import ProjectTodoList from "../ui/organisms/ProjectTodoList";
+import { useForm } from "react-hook-form";
 
 export default function NewProjectScreen({
-  navigation,
+navigation,
 }: NewProjectScreenProps) {
+  const { control } = useForm();
   return (
     <SafeAreaProvider>
       <StatusBar style="dark" />
@@ -21,11 +23,8 @@ export default function NewProjectScreen({
         <View className="mt-2 mb-2">
           <ProjectForm />
         </View>
-
         <Divider />
-        <View className="mt-2">
-          <Searchbar variant="compact" placeholder="Search here..." />
-        </View>
+        <ProjectTodoList />
       </SafeAreaView>
     </SafeAreaProvider>
   );

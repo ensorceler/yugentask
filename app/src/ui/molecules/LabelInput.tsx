@@ -8,7 +8,7 @@ interface Props {
   twClassName?: string;
   name: string;
   control: any;
-  label: string;
+  label?: string;
   placeholder: string;
   leftIcon?: ReactElement;
 }
@@ -22,9 +22,11 @@ export default function LabelInput({
 }: Props) {
   return (
     <View className="mt-4 flex items-start">
-      <Typography fw="semiBold" twClassName="text-lg mb-2">
-        {label}
-      </Typography>
+      {label && (
+        <Typography fw="semiBold" twClassName="text-lg mb-2">
+          {label}
+        </Typography>
+      )}
       <Controller
         control={control}
         render={({ field: { onChange, onBlur, value } }) => (

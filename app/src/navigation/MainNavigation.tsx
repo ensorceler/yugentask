@@ -1,10 +1,8 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "../screens/HomeScreen";
 import { MainTabParamList } from "../@types/navigation";
 import NewProjectScreen from "../screens/NewProjectScreen";
-import CalendarScreen from "../screens/CalendarScreen";
-import ProfileScreen from "../screens/profile/ProfileScreen";
+import CalendarScreen from "../screens/calendar/CalendarScreen";
 import {
   CalendarFilledIcon,
   CalendarOutlinedIcon,
@@ -17,12 +15,13 @@ import {
   ProfileOutlinedIcon,
 } from "../ui/assets/icons";
 import FolderScreen from "../screens/FolderScreen";
-import { View } from "react-native";
 import { Button } from "../ui/atoms";
 import { useNavigation } from "@react-navigation/native";
 import ProfileNavigation from "./ProfileNavigation";
 import NotificationScreen from "../screens/NotificationScreen";
 import { COLORS } from "../constants/theme";
+import WorkspaceNavigation from "./WorkspaceNavigation";
+import CalendarNavigation from "./CalendarNavigation";
 
 const MainTab = createBottomTabNavigator<MainTabParamList>();
 
@@ -40,7 +39,7 @@ export default function MainNavigation() {
       screenOptions={{
         ...tabScreenOptions,
         tabBarLabelStyle: {
-          fontFamily: "SpaceGrotesk_500Medium",
+          fontFamily: "SpaceGrotesk_Medium",
           fontSize: 12,
         },
         tabBarStyle: {
@@ -107,7 +106,7 @@ export default function MainNavigation() {
       />
       <MainTab.Screen
         name="calendar"
-        component={CalendarScreen}
+        component={CalendarNavigation}
         options={{
           title: "Calendar",
           tabBarIcon: ({ focused, size, color }) => {
@@ -137,6 +136,16 @@ export default function MainNavigation() {
       <MainTab.Screen
         name="notification"
         component={NotificationScreen}
+        options={{
+          tabBarStyle: {
+            display: "none",
+          },
+          tabBarButton: () => null,
+        }}
+      />
+      <MainTab.Screen
+        name="workspace"
+        component={WorkspaceNavigation}
         options={{
           tabBarStyle: {
             display: "none",

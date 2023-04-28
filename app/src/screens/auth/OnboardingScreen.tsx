@@ -1,9 +1,9 @@
 import { StatusBar } from "expo-status-bar";
 import { View, Text, Pressable } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Button } from "../ui/atoms";
-import Typography from "../ui/atoms/Typography";
-import { OnboardingScreenProps } from "../@types/navigation";
+import { Button } from "../../ui/atoms";
+import Typography from "../../ui/atoms/Typography";
+import { OnboardingScreenProps } from "../../@types/navigation";
 
 export default function OnboardingScreen({
   navigation,
@@ -11,7 +11,9 @@ export default function OnboardingScreen({
   return (
     <SafeAreaView className="relative border bg-primaryBlue-400  flex-1 flex-col justify-center items-center ">
       <View className="flex flex-col items-center ">
-        <Text className="font-spaceSemiBold text-3xl text-white">Planwork</Text>
+        <Text className="font-spaceSemiBold text-3xl text-white">
+          YugenTask
+        </Text>
         <Text className="font-spaceRegular text-lg text-white">
           A Project Management App
         </Text>

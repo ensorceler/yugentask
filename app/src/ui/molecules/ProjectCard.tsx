@@ -3,6 +3,7 @@ import twFusion from "../../utils/twFusion";
 import { Chip, Divider, Progress, Typography } from "../atoms";
 import { ProfileFilledIcon } from "../assets/icons";
 import { COLORS } from "../../constants/theme";
+import AvatarGroup from "../atoms/AvatarGroup";
 
 interface Props {
   projectName?: string;
@@ -27,7 +28,7 @@ export default function ProjectCard() {
         <Typography fw="semiBold" twClassName="text-xl">
           Landing Projects
         </Typography>
-        <Chip chipText="10 days left" variant="red" />
+        <Chip chipText="10 days left" variant="blue" />
       </View>
 
       <View>
@@ -46,7 +47,7 @@ export default function ProjectCard() {
             71%
           </Typography>
         </View>
-        <Progress variant="orange" progressValue={70} />
+        <Progress variant="blue" progressValue={71} />
       </View>
 
       <View>
@@ -57,7 +58,7 @@ export default function ProjectCard() {
         aria-label="project_assign_info"
         className="flex flex-row items-center justify-between"
       >
-        <View></View>
+        <AvatarGroup />
         <View className="flex flex-row items-center gap-2">
           <ProfileFilledIcon fill={COLORS.greyScale[400]} />
           <Typography fw="regular" twClassName="text-xs">

@@ -2,6 +2,7 @@ export { ChevronLeftIcon as ArrowLeftIcon } from "lucide-react-native";
 export { default as UserIcon } from "../../../assets/svgs/user.svg";
 export { default as GoogleColorIcon } from "../../../assets/svgs/google.svg";
 export { AppleIcon } from "lucide-react-native";
+export { AlertTriangleIcon } from "lucide-react-native";
 export { default as HomeOutlinedIcon } from "../../../assets/svgs/home_outlined.svg";
 export { default as HomeFilledIcon } from "../../../assets/svgs/home_filled.svg";
 export { default as FolderOutlinedIcon } from "../../../assets/svgs/folder_outlined.svg";
@@ -16,6 +17,11 @@ export { default as MenuIcon } from "../../../assets/svgs/menu.svg";
 export { default as NotificationIcon } from "../../../assets/svgs/notification.svg";
 
 export { ChevronRight as RightArrowIcon } from "lucide-react-native";
+export { ChevronLeft as LeftArrowIcon } from "lucide-react-native";
+export { CheckIcon } from "lucide-react-native";
+export { ShieldCloseIcon } from "lucide-react-native";
+export { LoaderIcon } from "lucide-react-native";
+
 export { default as LockIcon } from "../../../assets/svgs/lock.svg";
 export { default as SettingsIcon } from "../../../assets/svgs/settings.svg";
 export { default as EmailIcon } from "../../../assets/svgs/email.svg";
@@ -26,3 +32,7 @@ export { default as ClockIcon } from "../../../assets/svgs/clock.svg";
 export { default as ThemeIcon } from "../../../assets/svgs/theme.svg";
 export { default as PictureIcon } from "../../../assets/svgs/picture.svg";
 export { default as MoreIcon } from "../../../assets/svgs/more.svg";
+export { XIcon as CloseIcon } from "lucide-react-native";
+export { default as HelpIcon } from "../../../assets/svgs/help.svg";
+export { default as LogoutIcon } from "../../../assets/svgs/logout.svg";
+export { default as GraphicDesignIcon } from "../../../assets/svgs/graphic_design.svg";

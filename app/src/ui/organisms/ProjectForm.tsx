@@ -1,5 +1,7 @@
 import { View } from "react-native";
 import { Typography } from "../atoms";
+import { TextInput } from "react-native";
+
 import {
   CalendarFilledIcon,
   ClockIcon,
@@ -13,7 +15,15 @@ import { ProjectFormField } from "../molecules";
 
 export default function ProjectForm() {
   return (
-    <View className="mt-2 ">
+    <View className="mt-2">
+      <View className="mb-3">
+        <TextInput
+          className="text-lg font-spaceMedium placeholder:font-spaceRegular"
+          placeholder="Task name..."
+          cursorColor={COLORS.greyScale[900]}
+          placeholderTextColor={COLORS.greyScale[600]}
+        />
+      </View>
       <ProjectFormField
         fieldName="Assigned To"
         fieldIcon={<DualUsersIcon fill={COLORS.greyScale[500]} />}
